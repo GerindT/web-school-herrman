@@ -1,0 +1,64 @@
+ <%-include ('../partials/header') %>
+
+            <!-- One -->
+                <section id="one" class="wrapper style2">
+                    <div class="inner">
+                        <div class="box">
+                            <div class="content">
+                                <header class="align-center">
+                                    <h2>Aktivitete Te kryera ne Hermann</h2>
+                                    <hr>
+                                    <% if(currentUser ){%>
+                                    <p><a class="button" href="/aktivitetet/new">Shtoni nje Aktivitete</a></p>
+                                    <%}%>
+                                </header>
+                            </div>
+                        </div>
+                        <div class="grid-style">
+
+                            <% aktivitetet.forEach(function (el){%>
+							<div class="box">
+								<div class="content">
+									<header class="align-center">
+										<h2><%= el.title%></h2>
+                                    </header>
+                                    <div class="image fit2">
+                                        <img src="/<%= el.image%>"  />
+                                    </div>
+									<hr />
+									<p> 
+                                        <%= el.description%></p>
+                                        <div class="row" style="margin: 2px;">
+                                            <% if(currentUser ){%>
+                                        <a  class="button small" href="/aktivitetet/<%=el._id%>/edit">Ndryshoni</a>
+                                        <form id="Delete-Form" action="/aktivitetet/<%= el._id%>?_method=DELETE" method="POST">
+                                          <button class="button alt small">Fshini</button>
+                                        </form>
+                                        <%}%>
+                                        </div>
+                                    </div>
+                   
+							    </div>
+                            <%});%>
+
+				
+				
+					
+
+					</div>
+                    </div>
+                </section>
+   
+
+
+
+
+<!-- Footer -->
+<footer id="footer" class="wrapper">
+    <div class="inner">
+        <div class="copyright">
+        &copy; Shkolla.
+        </div>
+    </div>
+</footer>
+<%-include ('../partials/footer') %>

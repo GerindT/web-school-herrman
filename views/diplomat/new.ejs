@@ -1,0 +1,28 @@
+<%-include ('../partials/header') %>
+<div class="content">
+    <div style="width: 30%; margin: 25px auto;">
+        <h1 style="text-align: center;">Shtoni nje Diplome</h1>
+        <form action="/diplomat"  enctype="multipart/form-data" method="POST">
+            <div class="field">
+                <label >Titulli</label>
+                <input  type="text" name="title" >
+            </div>
+            <div class="input-group mb-3">
+           
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="inputGroupFile01" name="image">
+                  <label class="custom-file-label" for="inputGroupFile01">Imazh</label>
+                </div>
+              </div>
+            <div class="field">
+                <label >Pershkrimi</label>
+                <input  type="text" name="description" >
+            </div>
+            <div class="field">
+                <button class="button">Shtoni</button>
+            </div>
+        </form>
+        <a class="button" href="/diplomat">Fshini</a>
+        </div>
+    </div>
+<%-include ('../partials/footer') %>

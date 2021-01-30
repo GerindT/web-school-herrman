@@ -1,0 +1,38 @@
+
+            
+            <!DOCTYPE HTML>
+
+            <html>
+                <head>
+                    <title>Shkolla</title>
+                    <meta charset="utf-8" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1" />
+                    <link rel="stylesheet" href="/css/main.css" />
+                   <link rel="stylesheet" href="/css/bootstrap.min.css">
+                </head>
+                <body class="subpage">
+            
+                    <!-- Header -->
+                        <header id="header">
+                            <div class="logo"><a href="/">Logo</a></div>
+                            <a href="#menu" class="toggle"><span>Menu</span></a>
+                        </header>
+            
+                    <!-- Nav -->
+                        <nav id="menu">
+                            <ul class="links">
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/studim">Studioni ne Hermann</a></li>
+                                <li><a href="/aktivitetet">Aktivitetet</a></li>
+                                <li><a href="/diplomat">Diplomat</a></li>
+                                <li><a href="/sherbimet">Sherbimet</a></li>
+                                <%if(!currentUser){%>
+                                <li><a href="/login">Admin</a></li>
+                                <% } else {%>
+                                    <li><a href="#">Signed In As <%= currentUser.username%></a></li>
+                                       <li> <a href="/logout">Log out</a></li>
+                                        
+                                    
+                                    <% } %>
+                            </ul>
+                        </nav>

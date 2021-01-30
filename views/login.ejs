@@ -1,0 +1,21 @@
+<%-include ('./partials/header') %>
+
+<div class="content">
+<div style="width: 30%; margin: 25px auto;">
+    <h1 style="text-align: center;">Log in</h1>
+    <form action="/login" method="POST">
+        <div class="field">
+            <label >Username</label>
+            <input  type="text" name="username" >
+        </div>
+        <div class="field">
+            <label >Password</label>
+            <input  type="password" name="password">
+        </div>
+        <div class="field">
+            <button class="button">Submit</button>
+        </div>
+    </form>
+</div>
+</div>
+<%-include ('./partials/footer') %>

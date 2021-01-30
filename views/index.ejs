@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Shkolla</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" >
+		<link rel="stylesheet" type="text/css" href="/css/main.css" >
+		<link rel="stylesheet" href="/css/bootstrap.min.css">
+	</head>
+	<body>
+
+<!-- Header -->
+	<header id="header" class="alt">
+		<div class="logo"><a href="/">Logo </a></div>
+		<a href="#menu" class="toggle"><span>Menu</span></a>
+	</header>
+<!-- Nav -->
+	<nav id="menu">
+		<ul class="links">
+			<li><a href="/">Home</a></li>
+			<li><a href="/studim">Studioni ne Hermann</a></li>
+			<li><a href="/aktivitetet">Aktivitetet</a></li>
+			<li><a href="/diplomat">Diplomat</a></li>
+			<li><a href="/sherbimet">Sherbimet</a></li>
+			<%if(!currentUser){%>
+				<li><a href="/login">Admin</a></li>
+			<% } else {%>
+				<li><a href="#">Signed In As <%= currentUser.username%></a></li>
+				<li> <a href="/logout">Log out</a></li>
+			<% } %>
+		</ul>
+	</nav>
+<!-- banner -->
+<section id="banner" >
+	<div id="landing-header">
+	<div class="inner">
+		<h1 >Shkolla Hermann Gmeiner</h1>
+		<p >Shkolla profesional per TIK </p>
+		<a href="#one" class="button scrolly">Miresevini</a>
+	</div>
+	</div>
+		<ul class="slideshow">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			</ul>
+</section>
+<!-- One -->
+<section id="one" class="wrapper style2">
+	<div class="inner">
+		<div class="box">
+			<div class="image fit">
+				<img src="/pic01.jpg" alt="" />
+			</div>
+			<div class="content">
+				<header class="align-center">
+					<h2 >Historiku</h2>
+				</header>
+				<hr />
+				<p> Shkolla 'Hermann Gmeiner' është shkollë profesionale për TIK (Teknologji Informacioni dhe Komunikimi) e themeluar ne 2014. Programet e shkollës TIK “HERMANN GMEINER”, bazohen tek modeli dhe profili i shkollës austriake, në përgatitjen e programuesve në informatikë</p>
+			
+			</div>
+		</div>
+	</div>
+</section>
+<section id="one" class="wrapper style2">
+	<div class="inner">
+		<div>
+			<div class="box">
+					<div class="image fit">
+						<img src="/pic05.jpg" alt="" />
+					</div>
+				<div class="content">
+				<header class="align-center">
+				<h2>Kurrikula</h2>
+				</header>
+				<hr />
+				<li>Shkolla zgjat 4 vjet dhe numri i orëve mësimore përbën parakusht për cilësinë e duhur të formimit të specialistëve të rinj të TIK dhe për njohje të kualifikimit në Austri</li>
+				<li>Për të garantuar cilësi, do t’u kushtohet rëndësi njohurive të larta në Matematikë si dhe përvetësimit të njohurive të gjuhëve të huaja</li>
+				<li>Lëndët e formimit të përgjithshëm, orientohen ndaj kërkesave të nxënësve, për përgatitje cilësore për Maturën shtetërore</li>
+				<li>Për zhvillimin e Gjuhës angleze dhe asaj gjermane (si gjuhë e dytë) përdoren kurrikulat e gjimnazit, tashmë të konsoliduara dhe të vlerësuara</li>
+				<hr>
+				<p>	Disa nga lëndët që zhvillohen pranë “Hermann Gmeiner”:</p>
+				<li>Zhvillim Softwaresh</li>
+				<li>Projekte rreth teknikës së informacionit</li>
+				<li>Sisteme informacioni</li>
+				<li>Teknikë sistemi</li>
+				<li>Teknikë mediash</li>
+				<li>Rrjeta kompjuterike</li>
+				<li>Praktikë kompjuteri</li>	
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Two -->
+<section id="two" class="wrapper style3">
+	<div class="inner">
+		<div id="flexgrid">
+			<div>
+				<header>
+					<h3>Programim</h3>
+				</header>
+				<p>Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu</p>
+			
+			</div>
+			<div>
+				<header>
+					<h3>Network</h3>
+				</header>
+				<p>Ut convallis, sem sit amet interdum consectetuer, odio augue aliquam leo, nec dapibus tortor nibh sed </p>
+			
+			</div>
+			<div>
+				<header>
+					<h3>Databaze</h3>
+				</header>
+				<p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula.</p>
+			
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Three -->
+<section id="three" class="wrapper style2">
+	<div class="inner">
+		<div class="grid-style">
+				<div class="box">
+					<div class="content">
+						<header class="align-center">
+							<h2>Misioni</h2>
+						</header>
+						<hr />
+						<p>Programet e shkollës  TIK “HERMANN GMEINER”, bazohen tek modeli dhe profili i shkollës austriake, në përgatitjen e programuesve në informatikë.Profili i shkollimit është pretendues dhe i përshtatshëm për nxënësit që kanë përfunduar me rezultate të mira dhe shumë të mira shkollat 9 vjeçare.</p>
+					</div>
+				</div>
+			<div class="box">
+				<div class="content">
+					<header class="align-center">
+						<h2>Vizioni</h2>
+					</header>
+					<hr />
+					<p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada. Praesent in sem ex. Morbi mattis sapien pretium tellus venenatis, at egestas urna ornare.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Four -->
+<section id="four" class="wrapper style3">
+	<div class="inner">
+
+		<header class="align-center">
+			<h2>Infrastruktura</h2>
+			<hr>
+			<p>Shkolla TIK “HERMANN GMEINER”, ndodhet në një zonë të qetë dhe të gjelbëruar duke ofruar gjithashtu mjedise shumë të mira strukturore dhe të përshtatshme për zhvillimin cilësor të procesit mësimor dhe edukativ.Mjediset janë komforte, me sistem qendror ngrohjeje, freskim për periudhën e verës dhe me ndriçim komod që kombinon dritën natyrale me atë artificiale.Orët e praktikave teorike dhe të Laboratorëve, do të zhvillohen në mjedise të kompletuara, ku çdo post pune do te jetë i pajisur me mjete të reja dhe moderne sipas çdo fushe.Nxënësve, përvec orëve të shumta në laborator, ju mundësohet edhe praktika në biznese, për të cilën kemi mbështetjen edhe të Ministrisë së Mirëqënies Sociale dhe Rinisë.Në mjediset e shkollës përfshihen edhe mjedise për aktivitete sportive e social-kulturore të larmishme. 
+			</p>
+		</header>
+	</div>
+</section>
+<section id="one" class="wrapper style2">
+	<div class="inner">
+		<div class="box">
+			<div class="content">
+				<header class="align-center">
+					<h2>Stafi</h2>
+				</header>
+				<hr />
+				<p> Drejtimi i Shkollës TIK “HERMANN GMEINER”, është i përbashkët me përfaqësues të posaçëm austriak.Kualifikimet dhe kompetencat profesionale dhe pedagogjike të mësuesve do të jenë vendimtare për cilësinë e shërbimit arsimor profesional të shkollës.Stafi i shkollës është i përzgjedhur më kujdes nën drejtimin e specialistëve austriakë të fushës përkatëse. Ai do të nënshtrohet trajnimeve fillestare por edhe të vazhdueshme për tu përditësuar me të rejat më të fundit në fushën e TIK.</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Footer -->
+<footer id="footer" class="wrapper">
+
+	
+		<div class="copyright">
+			&copy; Shkolla Herrman Gmeiner.
+			<icon></icon>
+		</div>
+
+</footer>
+<%-include ('./partials/footer') %>
